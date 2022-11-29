@@ -38,7 +38,7 @@ class CheckboxWithTitle: UIView {
             make.left.equalToSuperview().offset(20)
         }
         
-        checkbox.image = UIImage(systemName: "circle")
+        checkbox.image = UIImage(systemName: "square")
         checkbox.contentMode = .scaleAspectFit
         checkbox.tintColor = UIColor(named: "Black")
         
