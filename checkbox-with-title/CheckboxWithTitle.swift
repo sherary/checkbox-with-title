@@ -10,7 +10,7 @@ import SnapKit
 
 class CheckboxWithTitle: UIView {
     var isChecked = false
-    let checkround = UIImageView()
+    let checkbox = UIImageView()
     let label = UILabel()
     
     override init(frame: CGRect) {
@@ -38,12 +38,12 @@ class CheckboxWithTitle: UIView {
             make.left.equalToSuperview().offset(20)
         }
         
-        checkround.image = UIImage(systemName: "circle")
-        checkround.contentMode = .scaleAspectFit
-        checkround.tintColor = UIColor(named: "Black")
+        checkbox.image = UIImage(systemName: "circle")
+        checkbox.contentMode = .scaleAspectFit
+        checkbox.tintColor = UIColor(named: "Black")
         
-        addSubview(checkround)
-        checkround.snp.makeConstraints { make in
+        addSubview(checkbox)
+        checkbox.snp.makeConstraints { make in
             make.right.equalToSuperview().offset(-20)
         }
     }
@@ -52,9 +52,9 @@ class CheckboxWithTitle: UIView {
         self.isChecked = !isChecked
         
         if !isChecked {
-            checkround.image = UIImage(systemName: "circle.circle.fill")
+            checkbox.image = UIImage(systemName: "checkmark.square.fill")
         } else {
-            checkround.image = UIImage(systemName: "circle")
+            checkbox.image = UIImage(systemName: "square")
         }
     }
 }
