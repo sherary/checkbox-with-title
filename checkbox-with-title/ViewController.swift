@@ -28,8 +28,8 @@ class ViewController: UIViewController {
         checkbox.snp.makeConstraints { make in
             make.width.equalToSuperview()
             make.height.equalTo(20)
-            make.top.equalTo(view.safeAreaLayoutGuide.snp.top).offset(12)
-            make.left.equalToSuperview()
+            make.centerX.equalToSuperview()
+            make.centerY.equalToSuperview()
         }
     }
     
